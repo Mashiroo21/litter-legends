@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://mmexff7jgnyh"
+path="res://.godot/imported/structure-metal.obj-849751e7e6f6f616f0d1818631638ae6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/structure-metal.obj-849751e7e6f6f616f0d1818631638ae6.mesh"]
+
+source_file="res://kenney_survival-kit/Models/OBJ format/structure-metal.obj"
+dest_files=["res://.godot/imported/structure-metal.obj-849751e7e6f6f616f0d1818631638ae6.mesh", "res://.godot/imported/structure-metal.obj-849751e7e6f6f616f0d1818631638ae6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

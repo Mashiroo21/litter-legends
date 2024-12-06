@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://7gd4rgiaoxn1"
+path="res://.godot/imported/wheelchair-deluxe.obj-5c595bf4948a559bd4c99e0e788617eb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wheelchair-deluxe.obj-5c595bf4948a559bd4c99e0e788617eb.mesh"]
+
+source_file="res://Character/OBJ format/wheelchair-deluxe.obj"
+dest_files=["res://.godot/imported/wheelchair-deluxe.obj-5c595bf4948a559bd4c99e0e788617eb.mesh", "res://.godot/imported/wheelchair-deluxe.obj-5c595bf4948a559bd4c99e0e788617eb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

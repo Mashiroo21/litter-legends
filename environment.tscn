@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c17sktxalyh4s"]
+
+[ext_resource type="PackedScene" uid="uid://xq82itedx1rn" path="res://Character/GLB format/character-female-e.glb" id="1_1iiuu"]
+
+[node name="Female Char" type="CharacterBody3D"]
+
+[node name="character-female-e2" parent="." instance=ExtResource("1_1iiuu")]

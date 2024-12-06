@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dgjwv83f81se0"
+path="res://.godot/imported/aid-cane-blind.obj-53680ed97cea1d82cbfd231cffa26187.mesh"
+
+[deps]
+
+files=["res://.godot/imported/aid-cane-blind.obj-53680ed97cea1d82cbfd231cffa26187.mesh"]
+
+source_file="res://Character/OBJ format/aid-cane-blind.obj"
+dest_files=["res://.godot/imported/aid-cane-blind.obj-53680ed97cea1d82cbfd231cffa26187.mesh", "res://.godot/imported/aid-cane-blind.obj-53680ed97cea1d82cbfd231cffa26187.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

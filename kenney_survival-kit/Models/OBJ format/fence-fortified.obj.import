@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cjfofsuhn7t57"
+path="res://.godot/imported/fence-fortified.obj-53e38739c10af91713f9c086f0c8c25e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence-fortified.obj-53e38739c10af91713f9c086f0c8c25e.mesh"]
+
+source_file="res://kenney_survival-kit/Models/OBJ format/fence-fortified.obj"
+dest_files=["res://.godot/imported/fence-fortified.obj-53e38739c10af91713f9c086f0c8c25e.mesh", "res://.godot/imported/fence-fortified.obj-53e38739c10af91713f9c086f0c8c25e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

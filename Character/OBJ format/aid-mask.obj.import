@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://csj152p4vds4k"
+path="res://.godot/imported/aid-mask.obj-9eb8b02df28be5830e6d0bb2615dec23.mesh"
+
+[deps]
+
+files=["res://.godot/imported/aid-mask.obj-9eb8b02df28be5830e6d0bb2615dec23.mesh"]
+
+source_file="res://Character/OBJ format/aid-mask.obj"
+dest_files=["res://.godot/imported/aid-mask.obj-9eb8b02df28be5830e6d0bb2615dec23.mesh", "res://.godot/imported/aid-mask.obj-9eb8b02df28be5830e6d0bb2615dec23.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

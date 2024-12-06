@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cwji2nf45mj1j"
+path="res://.godot/imported/rock-a.obj-6c2238bee803cc45cbc7ecb05249356d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rock-a.obj-6c2238bee803cc45cbc7ecb05249356d.mesh"]
+
+source_file="res://kenney_survival-kit/Models/OBJ format/rock-a.obj"
+dest_files=["res://.godot/imported/rock-a.obj-6c2238bee803cc45cbc7ecb05249356d.mesh", "res://.godot/imported/rock-a.obj-6c2238bee803cc45cbc7ecb05249356d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

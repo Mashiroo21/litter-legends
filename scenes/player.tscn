@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://el56d68qo6ej"]
+
+[ext_resource type="PackedScene" uid="uid://cb2qkwq4himu8" path="res://scenes/character_female_e2.tscn" id="1_0excp"]
+[ext_resource type="Script" path="res://Scripts/character.gd" id="2_b330d"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mhcnw"]
+height = 2.40728
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="CharacterEx" parent="." instance=ExtResource("1_0excp")]
+unique_name_in_owner = true
+script = ExtResource("2_b330d")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.336672, 0, 0.363644, 0)
+shape = SubResource("CapsuleShape3D_mhcnw")

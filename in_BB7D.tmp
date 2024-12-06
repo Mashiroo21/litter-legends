@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://bl4dr4v1x55tn"]
+
+[ext_resource type="PackedScene" uid="uid://el56d68qo6ej" path="res://scenes/player.tscn" id="1_kk6aw"]
+[ext_resource type="PackedScene" uid="uid://xq82itedx1rn" path="res://Character/GLB format/character-female-e.glb" id="1_pk3wr"]
+[ext_resource type="Script" path="res://Scripts/character_female_e.gd" id="2_gif83"]
+[ext_resource type="Script" path="res://Scripts/female_char_exmple.gd" id="2_pi6ho"]
+[ext_resource type="ArrayMesh" uid="uid://b8sp55tsyufe3" path="res://Assets/Gray Map/grey_map.obj" id="3_dil8r"]
+[ext_resource type="Script" path="res://Scripts/camera_3d.gd" id="3_hkrhn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hb04s"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_uan82"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hniue"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_e4jsl"]
+
+[node name="InGame" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.776245, 0.630432, 0, -0.630432, -0.776245, 0, 14.617, -11.0653)
+
+[node name="character-female-e2" parent="." instance=ExtResource("1_pk3wr")]
+script = ExtResource("2_gif83")
+
+[node name="Camera3D" type="Camera3D" parent="character-female-e2"]
+transform = Transform3D(-0.333333, -1.97729e-08, 4.62854e-08, 0, 0.306534, 0.13095, -5.03319e-08, 0.13095, -0.306534, 1.80583e-07, 1.21568, -1.19595)
+script = ExtResource("3_hkrhn")
+
+[node name="Player" parent="." instance=ExtResource("1_kk6aw")]
+transform = Transform3D(-3, 0, -4.52987e-07, 0, 3, 0, 4.52987e-07, 0, -3, 0, 0, 0)
+visible = false
+script = ExtResource("2_pi6ho")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(-0.333333, -1.97729e-08, 4.62854e-08, 0, 0.306534, 0.13095, -5.03319e-08, 0.13095, -0.306534, 1.80583e-07, 1.21568, -1.19595)
+script = ExtResource("3_hkrhn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+
+[node name="ObjekTest" type="RigidBody3D" parent="."]
+transform = Transform3D(0.978907, -0.186286, -0.0839002, 0.204308, 0.892558, 0.401993, 0, -0.410655, 0.911791, 2.8039, 5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ObjekTest"]
+shape = SubResource("BoxShape3D_hb04s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ObjekTest"]
+mesh = SubResource("BoxMesh_uan82")
+
+[node name="Floor" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0)
+shape = SubResource("BoxShape3D_hniue")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0)
+mesh = SubResource("BoxMesh_e4jsl")
+
+[node name="Map" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+mesh = ExtResource("3_dil8r")
+
+[node name="Marker3D" type="Marker3D" parent="."]

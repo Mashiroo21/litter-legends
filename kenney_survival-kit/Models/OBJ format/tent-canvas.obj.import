@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bohkhafl3cuw"
+path="res://.godot/imported/tent-canvas.obj-4617d17cdfe58f46292bc49b1b01b4c7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tent-canvas.obj-4617d17cdfe58f46292bc49b1b01b4c7.mesh"]
+
+source_file="res://kenney_survival-kit/Models/OBJ format/tent-canvas.obj"
+dest_files=["res://.godot/imported/tent-canvas.obj-4617d17cdfe58f46292bc49b1b01b4c7.mesh", "res://.godot/imported/tent-canvas.obj-4617d17cdfe58f46292bc49b1b01b4c7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

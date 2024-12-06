@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bryywdsuxl66t"
+path="res://.godot/imported/structure-metal-doorway.obj-77a0f7d8e03a99aa06df28707d7d979a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/structure-metal-doorway.obj-77a0f7d8e03a99aa06df28707d7d979a.mesh"]
+
+source_file="res://kenney_survival-kit/Models/OBJ format/structure-metal-doorway.obj"
+dest_files=["res://.godot/imported/structure-metal-doorway.obj-77a0f7d8e03a99aa06df28707d7d979a.mesh", "res://.godot/imported/structure-metal-doorway.obj-77a0f7d8e03a99aa06df28707d7d979a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cw585e1imhvnr"
+path="res://.godot/imported/tree-log.obj-1a262db9bb24b58d16adba9fb9934711.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree-log.obj-1a262db9bb24b58d16adba9fb9934711.mesh"]
+
+source_file="res://kenney_survival-kit/Models/OBJ format/tree-log.obj"
+dest_files=["res://.godot/imported/tree-log.obj-1a262db9bb24b58d16adba9fb9934711.mesh", "res://.godot/imported/tree-log.obj-1a262db9bb24b58d16adba9fb9934711.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

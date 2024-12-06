@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bluwajutxgeja"
+path="res://.godot/imported/tree-tall.obj-e0dbceef8798b6cffd3af771d64ace0e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree-tall.obj-e0dbceef8798b6cffd3af771d64ace0e.mesh"]
+
+source_file="res://kenney_survival-kit/Models/OBJ format/tree-tall.obj"
+dest_files=["res://.godot/imported/tree-tall.obj-e0dbceef8798b6cffd3af771d64ace0e.mesh", "res://.godot/imported/tree-tall.obj-e0dbceef8798b6cffd3af771d64ace0e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

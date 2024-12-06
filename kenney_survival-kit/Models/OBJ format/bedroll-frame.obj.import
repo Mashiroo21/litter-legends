@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://l14s2alg6c2d"
+path="res://.godot/imported/bedroll-frame.obj-507b3fa311285b579352e61006c99791.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bedroll-frame.obj-507b3fa311285b579352e61006c99791.mesh"]
+
+source_file="res://kenney_survival-kit/Models/OBJ format/bedroll-frame.obj"
+dest_files=["res://.godot/imported/bedroll-frame.obj-507b3fa311285b579352e61006c99791.mesh", "res://.godot/imported/bedroll-frame.obj-507b3fa311285b579352e61006c99791.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

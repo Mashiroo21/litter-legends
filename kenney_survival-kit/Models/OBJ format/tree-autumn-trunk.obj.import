@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://chvr30e2eb84"
+path="res://.godot/imported/tree-autumn-trunk.obj-ea5721d4a6487b09c12e76fd9005277f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree-autumn-trunk.obj-ea5721d4a6487b09c12e76fd9005277f.mesh"]
+
+source_file="res://kenney_survival-kit/Models/OBJ format/tree-autumn-trunk.obj"
+dest_files=["res://.godot/imported/tree-autumn-trunk.obj-ea5721d4a6487b09c12e76fd9005277f.mesh", "res://.godot/imported/tree-autumn-trunk.obj-ea5721d4a6487b09c12e76fd9005277f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
