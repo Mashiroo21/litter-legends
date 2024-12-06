@@ -38,6 +38,15 @@ func fall():
 
 func jump():
 	animation_player.play("jump")
+	
+func pickup():
+	animation_player.play("pick-up")
+	
+func attmelee():
+	animation_player.play("attack-melee-right")
+	
+func hold():
+	animation_player.play("holding-right")
 
 #func edge_grab():
 	#state_machine.travel("EdgeGrab")

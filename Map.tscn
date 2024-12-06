@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmbhqya00qayt"]
+
+[ext_resource type="PackedScene" uid="uid://bmk05fnig35ae" path="res://scenes/mapcolored.tscn" id="1_2re3u"]
+[ext_resource type="PackedScene" uid="uid://bbl5xyjkhdi3p" path="res://scenes/box_mdl.tscn" id="2_imk5o"]
+
+[node name="Environment" type="MeshInstance3D"]
+
+[node name="Map" parent="." instance=ExtResource("1_2re3u")]
+
+[node name="Box3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.997102, 0, -0.0760751, 0, 1, 0, 0.0760751, 0, 0.997102, -16.5116, 1.32084, 10.3057)
+
+[node name="Box_MDL" parent="Box3" instance=ExtResource("2_imk5o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.72115, 0.0243537, -0.873885)
+
+[node name="Box2" type="MeshInstance3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -11.4364, 1.27931, 12.4211)
+skeleton = NodePath("../..")
+
+[node name="Box_MDL" parent="Box2" instance=ExtResource("2_imk5o")]
+
+[node name="Box" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.4731, 0.018593, 18.3284)
+
+[node name="Box_MDL" parent="Box" instance=ExtResource("2_imk5o")]
+
+[node name="Box4" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.39988, 0, -0.0238338, 0, 2.4, 0, 0.0238338, 0, 2.39988, -12.4163, 1.33132, 9.5082)
+
+[node name="Box_MDL" parent="Box4" instance=ExtResource("2_imk5o")]

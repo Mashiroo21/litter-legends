@@ -1,0 +1,81 @@
+[gd_scene load_steps=9 format=3 uid="uid://bl4dr4v1x55tn"]
+
+[ext_resource type="PackedScene" uid="uid://el56d68qo6ej" path="res://scenes/player.tscn" id="1_kk6aw"]
+[ext_resource type="Script" path="res://Scripts/female_char_exmple.gd" id="2_pi6ho"]
+[ext_resource type="PackedScene" uid="uid://bmk05fnig35ae" path="res://scenes/mapcolored.tscn" id="3_ag0mw"]
+[ext_resource type="PackedScene" uid="uid://bbl5xyjkhdi3p" path="res://scenes/box_mdl.tscn" id="4_3modh"]
+[ext_resource type="PackedScene" uid="uid://bps1jhaksgilg" path="res://scenes/Kuntuludun2.tscn" id="6_kbphf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_b5bl4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gdpcl"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jtja0"]
+
+[node name="InGame" type="Node3D"]
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 40.0
+one_shot = true
+
+[node name="Barier" type="StaticBody3D" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Barier"]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 15, 0)
+mesh = SubResource("BoxMesh_b5bl4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Barier"]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 15, 0)
+shape = SubResource("BoxShape3D_gdpcl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.966828, 0.255429, 0, -0.255429, -0.966828, 0, 57.232, -67.6628)
+
+[node name="Player" parent="." instance=ExtResource("1_kk6aw")]
+transform = Transform3D(-3, 0, -4.52987e-07, 0, 3, 0, 4.52987e-07, 0, -3, -34, 0.448703, 33.2103)
+script = ExtResource("2_pi6ho")
+
+[node name="CameraPivot" type="Node3D" parent="Player"]
+unique_name_in_owner = true
+transform = Transform3D(1, -6.66489e-08, 1.55054e-08, 6.66489e-08, 0.897312, -0.441396, 1.55054e-08, 0.441396, 0.897312, 0, 0.49397, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="Player/CameraPivot"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+shape = SubResource("SphereShape3D_jtja0")
+spring_length = 2.5
+
+[node name="Camera3D" type="Camera3D" parent="Player/CameraPivot/SpringArm3D"]
+unique_name_in_owner = true
+transform = Transform3D(0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, 0, 0, 0)
+
+[node name="Environment" type="MeshInstance3D" parent="."]
+visible = false
+
+[node name="Map" parent="Environment" instance=ExtResource("3_ag0mw")]
+
+[node name="Box3" type="MeshInstance3D" parent="Environment"]
+transform = Transform3D(0.997102, 0, -0.0760751, 0, 1, 0, 0.0760751, 0, 0.997102, -16.5116, 1.32084, 10.3057)
+
+[node name="Box_MDL" parent="Environment/Box3" instance=ExtResource("4_3modh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.72115, 0.0243537, -0.873885)
+
+[node name="Box2" type="MeshInstance3D" parent="Environment"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -11.4364, 1.27931, 12.4211)
+skeleton = NodePath("../..")
+
+[node name="Box_MDL" parent="Environment/Box2" instance=ExtResource("4_3modh")]
+
+[node name="Box" type="MeshInstance3D" parent="Environment"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -26.4731, 0.018593, 18.3284)
+
+[node name="Box_MDL" parent="Environment/Box" instance=ExtResource("4_3modh")]
+
+[node name="Box4" type="MeshInstance3D" parent="Environment"]
+transform = Transform3D(2.39988, 0, -0.0238338, 0, 2.4, 0, 0.0238338, 0, 2.39988, -12.4163, 1.33132, 9.5082)
+
+[node name="Box_MDL" parent="Environment/Box4" instance=ExtResource("4_3modh")]
+
+[node name="Map Baru 2" parent="." instance=ExtResource("6_kbphf")]
