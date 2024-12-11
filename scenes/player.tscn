@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://el56d68qo6ej"]
 
-[ext_resource type="PackedScene" uid="uid://cb2qkwq4himu8" path="res://scenes/character_female_e2.tscn" id="1_0excp"]
+[ext_resource type="PackedScene" uid="uid://cb2qkwq4himu8" path="res://scenes/rina.tscn" id="1_0excp"]
 [ext_resource type="Script" path="res://Scripts/character.gd" id="2_b330d"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mhcnw"]

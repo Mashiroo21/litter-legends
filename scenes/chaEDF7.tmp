@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3 uid="uid://hay6angnif2"]
+
+[ext_resource type="Script" path="res://character_selection.gd" id="1_fmu80"]
+[ext_resource type="PackedScene" uid="uid://bp4kfw6a5jn6g" path="res://scenes/character-female-e2.tscn" id="1_inkt4"]
+[ext_resource type="PackedScene" uid="uid://dlwuvv7yp6bje" path="res://scenes/character_female_f_2.tscn" id="2_8n3d0"]
+[ext_resource type="PackedScene" uid="uid://3n0sef8ke1l6" path="res://scenes/character_male_a_2.tscn" id="3_wsrpj"]
+[ext_resource type="PackedScene" uid="uid://bmffqcgv2pg7t" path="res://scenes/character_male_f_2.tscn" id="4_5kdiu"]
+
+[sub_resource type="Environment" id="Environment_hi5u7"]
+sdfgi_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0.54902, 0.560784, 0.6, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6s182"]
+size = Vector2(10, 10)
+
+[sub_resource type="LabelSettings" id="LabelSettings_y6giv"]
+font_size = 50
+
+[node name="CharacterSelection" type="Node3D"]
+script = ExtResource("1_fmu80")
+
+[node name="Characters" type="Node" parent="."]
+
+[node name="character-female-e-2" parent="Characters" instance=ExtResource("1_inkt4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.79731, 0, 0)
+
+[node name="character_female_f_2" parent="Characters" instance=ExtResource("2_8n3d0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04971, 0, 0)
+
+[node name="character_male_a_2" parent="Characters" instance=ExtResource("3_wsrpj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.76727, 0, 0)
+
+[node name="character_male_f_2" parent="Characters" instance=ExtResource("4_5kdiu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.07142, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.938848, 0.344332, 0, -0.344332, 0.938848, 0, 1.89495, 4.44211)
+fov = 58.9157
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_hi5u7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_6s182")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.949431, 0.313976, 0, -0.313976, 0.949431, 0, 2.2581, 5.1812)
+
+[node name="CharcterLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Name"
+label_settings = SubResource("LabelSettings_y6giv")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -87.0
+offset_top = -151.0
+offset_right = 87.0
+offset_bottom = -78.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Start"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

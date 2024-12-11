@@ -10,3 +10,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
+
+
+func _on_selection_area_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
+	pass # Replace with function body.

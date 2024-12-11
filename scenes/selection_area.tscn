@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl8dlyee6q4gi"]
+
+[ext_resource type="Script" path="res://Scripts/selection_area.gd" id="1_wi83w"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xk4c4"]
+radius = 0.637526
+height = 2.11768
+
+[sub_resource type="TorusMesh" id="TorusMesh_tqbml"]
+inner_radius = 0.9
+
+[node name="SelectionArea" type="Area3D"]
+script = ExtResource("1_wi83w")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.568946, 0)
+shape = SubResource("CapsuleShape3D_xk4c4")
+
+[node name="Selection" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("TorusMesh_tqbml")
+skeleton = NodePath("../..")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

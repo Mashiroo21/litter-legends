@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfc7aal83ov4o"]
+
+[ext_resource type="Script" path="res://Scripts/level.gd" id="1_ulaxa"]
+
+[sub_resource type="Environment" id="Environment_b5n0a"]
+sdfgi_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0.54902, 0.560784, 0.6, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_m36mo"]
+size = Vector2(10, 10)
+
+[node name="Level" type="Node3D"]
+script = ExtResource("1_ulaxa")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.938848, 0.344332, 0, -0.344332, 0.938848, 0, 1.89495, 4.11415)
+fov = 58.9157
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_b5n0a")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_m36mo")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.949431, 0.313976, 0, -0.313976, 0.949431, 0, 2.2581, 5.1812)
+
+[node name="PlayerPos" type="Marker3D" parent="."]
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -111.0
+offset_top = -69.0
+offset_right = 116.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Go Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
