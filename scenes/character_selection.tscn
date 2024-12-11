@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://hay6angnif2"]
 
 [ext_resource type="Script" path="res://character_selection.gd" id="1_fmu80"]
-[ext_resource type="PackedScene" uid="uid://bp4kfw6a5jn6g" path="res://scenes/character-female-e2.tscn" id="1_inkt4"]
-[ext_resource type="PackedScene" uid="uid://dlwuvv7yp6bje" path="res://scenes/character_female_f_2.tscn" id="2_8n3d0"]
-[ext_resource type="PackedScene" uid="uid://3n0sef8ke1l6" path="res://scenes/character_male_a_2.tscn" id="3_wsrpj"]
-[ext_resource type="PackedScene" uid="uid://bmffqcgv2pg7t" path="res://scenes/character_male_f_2.tscn" id="4_5kdiu"]
+[ext_resource type="PackedScene" uid="uid://bp4kfw6a5jn6g" path="res://Scenes/character-female-e2.tscn" id="1_inkt4"]
+[ext_resource type="PackedScene" uid="uid://dlwuvv7yp6bje" path="res://Scenes/character_female_f_2.tscn" id="2_8n3d0"]
+[ext_resource type="PackedScene" uid="uid://3n0sef8ke1l6" path="res://Scenes/character_male_a_2.tscn" id="3_wsrpj"]
+[ext_resource type="PackedScene" uid="uid://bmffqcgv2pg7t" path="res://Scenes/character_male_f_2.tscn" id="4_5kdiu"]
 
 [sub_resource type="Environment" id="Environment_hi5u7"]
 sdfgi_enabled = true
