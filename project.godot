@@ -13,11 +13,19 @@ config_version=5
 config/name="LitterLegends"
 run/main_scene="res://environment.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
+boot_splash/image="res://Assets/Splash Screen/splash2.png"
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=4000
+boot_splash/main_scene="res://environment.tscn"
 
 [autoload]
 
 Global="*res://Scripts/global.gd"
+
+[display]
+
+display_server/minimum_display_time=18
+display_server/image="res://Assets/Splash Screen/Splash Screen.png"
 
 [input]
 
